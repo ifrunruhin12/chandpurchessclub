@@ -127,32 +127,35 @@
         </div>
     </section>
 
+    <!-- JavaScript for AJAX Form Submission -->
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-          event.preventDefault(); // Prevent the default form submission
-      
-          // Fetch the form data
-          const form = event.target;
-          const formData = new FormData(form);
-      
-          // Send the form data via fetch
-          fetch(form.action, {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const form = event.target;
+        const formData = new FormData(form);
+
+        // Send the form data via AJAX (fetch)
+        fetch(form.action, {
             method: form.method,
             body: formData,
             headers: {
-              'Accept': 'application/json'
+            'Accept': 'application/json'
             }
-          }).then(function(response) {
-            if (response.ok) {
-              window.location.href = 'thank-you.html'; // Redirect on success
-            } else {
-              window.location.href = 'error.html'; // Redirect on failure
-            }
-          }).catch(function(error) {
-            window.location.href = 'error.html'; // Redirect on network or other errors
-          });
+        }).then(function(response) {
+        if (response.ok) {
+            // Redirect to thank-you.html on success
+            window.location.href = 'thank-you.html';
+        } else {
+            // Redirect to error.html if something goes wrong
+            window.location.href = 'error.html';
+        }
+        }).catch(function(error) {
+            // Redirect to error.html in case of network errors
+            window.location.href = 'error.html';
         });
-      </script>
+    });
+    </script>
       
 
 
