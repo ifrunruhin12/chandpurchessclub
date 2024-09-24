@@ -373,6 +373,8 @@ form {
     background-color: #2980b9;
 }
 
+
+
 /* =======================
    FOOTER STYLES
 ========================= */
@@ -421,22 +423,120 @@ footer {
     background-color: #34495e; /* Slightly lighter on hover */
   }
   
-  /* Thank You and Error Pages */
-  #thank-you, #error {
+/* =======================
+   ERROR PAGE STYLES
+========================= */
+#error {
+    min-height: 100vh; /* Ensures the section takes up full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.error-container {
+    max-width: 500px;
+    background-color: white;
+    padding: 40px;
     text-align: center;
-    padding: 50px 20px;
-  }
-  
-  #thank-you h2, #error h2 {
-    font-size: 32px;
-    color: #e74c3c; /* Red color for error, adjust as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#error h2 {
+    font-size: 36px;
+    color: #e74c3c; /* Red for error emphasis */
     margin-bottom: 20px;
-  }
-  
-  #thank-you p, #error p {
+}
+
+#error p {
+    font-size: 18px;
+    color: #34495e; /* Darker text for readability */
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the buttons */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2c3e50; /* Darker blue matching the header */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #34495e; /* Slightly lighter blue for hover effect */
+}
+
+
+/* Thank You Section Styles */
+#thank-you {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height for proper alignment */
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+.thank-you-container {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+#thank-you h2 {
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#thank-you p {
     font-size: 18px;
     margin-bottom: 30px;
-  }  
+    color: #34495e;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2c3e50; /* Darker blue matching the header */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #34495e; /* Slightly lighter blue for hover effect */
+}
+
+/* Footer alignment fix */
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+}
 
 /* =======================
    MEDIA QUERIES
