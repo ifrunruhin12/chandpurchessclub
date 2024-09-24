@@ -110,9 +110,11 @@
         <div class="container contact-container">
             <h2>Contact Us</h2>
             <form action="https://formsubmit.co/email@chandpurchessclub.site" method="POST">
-                <!-- Hidden inputs to handle redirections -->
-                <input type="hidden" name="_next" value="thank_you.html">
-                <input type="hidden" name="_error" value="error.html">
+                <!-- FormSubmit Redirection after Success -->
+                <input type="hidden" name="_next" value="https://chandpurchessclub.site/thank_you.html">
+                <!-- FormSubmit Redirection after Error -->
+                <input type="hidden" name="_error" value="https://chandpurchessclub.site/error.html">
+                <!-- FormSubmit Hidden Fields -->
                 <input type="hidden" name="_subject" value="New Contact Form Submission">
                 
                 <!-- Name Field -->
@@ -138,6 +140,7 @@
             </form>
         </div>
     </section>
+
 
     
 
