@@ -105,11 +105,11 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section using Formspree -->
     <section id="contact">
         <div class="container contact-container">
             <h2>Contact Us</h2>
-            <form action="send_mail.php" method="POST">
+            <form action="https://formspree.io/f/mdknrbdp" method="POST">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -126,6 +126,35 @@
             </form>
         </div>
     </section>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+      
+          // Fetch the form data
+          const form = event.target;
+          const formData = new FormData(form);
+      
+          // Send the form data via fetch
+          fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          }).then(function(response) {
+            if (response.ok) {
+              window.location.href = 'thank-you.html'; // Redirect on success
+            } else {
+              window.location.href = 'error.html'; // Redirect on failure
+            }
+          }).catch(function(error) {
+            window.location.href = 'error.html'; // Redirect on network or other errors
+          });
+        });
+      </script>
+      
+
 
 
     <!-- Footer -->

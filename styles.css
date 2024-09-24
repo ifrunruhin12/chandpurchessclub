@@ -428,6 +428,42 @@ footer {
     background-color: #34495e;
 }
 
+/* General Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2c3e50; /* Darker color for contrast */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #34495e; /* Slightly lighter on hover */
+  }
+  
+  /* Error Section Styles */
+  #error {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  #error h2 {
+    font-size: 32px;
+    color: #e74c3c; /* Red for error message */
+    margin-bottom: 20px;
+  }
+  
+  #error p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+
 /* =======================
    MEDIA QUERIES
 ========================= */
