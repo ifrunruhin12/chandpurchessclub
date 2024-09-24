@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandpur Chess Club - CCC</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CCC</h1>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#social">Social Media</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="container hero-content">
+            <h2>Welcome to Chandpur Chess Club</h2>
+            <p>Join us for thrilling chess matches and enhance your skills with experienced players!</p>
+            <a href="#events" class="btn">Join Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="https://i.imgur.com/4BXktHP.jpeg" alt="About Chandpur Chess Club">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Chandpur Chess Club (CCC) was established to promote the game of chess and unite chess enthusiasts in Chandpur. Our mission is to nurture talent, foster a love for chess, and organize events catering to players of all skill levels.</p>
+                <p>Whether you're a beginner or a seasoned player, CCC offers a welcoming environment to learn, compete, and grow your chess abilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <h3>Monthly Chess Tournament</h3>
+                    <p>Date: September 30th</p>
+                    <p>Compete against fellow chess enthusiasts and showcase your strategic skills!</p>
+                </div>
+                <div class="event-card">
+                    <h3>Beginner's Chess Workshop</h3>
+                    <p>Date: October 5th</p>
+                    <p>Learn the basics of chess with our experienced coaches. Perfect for newcomers!</p>
+                </div>
+                <div class="event-card">
+                    <h3>Open Chess Night</h3>
+                    <p>Date: October 12th</p>
+                    <p>Join us for a night of casual games, socializing, and chess fun.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social">
+        <div class="container">
+            <h2>Latest from Our Social Media</h2>
+            <div class="social-carousel">
+                <!-- Facebook Post 1 -->
+                <div class="social-post">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid025YWtykMEE8koGoyhKF3LXF454qRJaUmHr25xUdWYk1KjjRAwtLfzgNBfGVdTX2zCl%26id%3D61554974931751&width=340" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <!-- Facebook Post 2 -->
+                <div class="social-post">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid05RRG12q9A1NUZUnHGiiq3fwtyzRAPhWm5KpuQZ5ZFaUiJahKEDxXbAnDD42BMS5zl%26id%3D61554974931751&width=340" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <!-- Facebook Post 3 -->
+                <div class="social-post">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid021cp9GRNERD7Jdc6PQmAPtGnwZknsKe1PYbEByZ5SLHS5YxgWSRdrSwaB9jGwBwHgl%26id%3D61554974931751&width=340" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container contact-container">
+            <h2>Contact Us</h2>
+            <form action="send_mail.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2024 Chandpur Chess Club - CCC. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="YourNonceValue">
+    </script>
+
+    <!-- JavaScript for Navigation -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+    <!-- Add this script before the closing </body> tag in index.html -->
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (name === '' || email === '' || message === '') {
+                alert('Please fill in all fields.');
+                event.preventDefault();
+            } else {
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    alert('Please enter a valid email address.');
+                    event.preventDefault();
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
