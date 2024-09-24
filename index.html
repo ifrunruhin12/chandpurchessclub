@@ -105,20 +105,40 @@
         </div>
     </section>
 
-    <form action="https://formsubmit.co/email@chandpurchessclub.site" method="POST">
-        <!-- Hidden inputs to manage redirects and email subject -->
-        <input type="hidden" name="_next" value="thank_you.html">
-        <input type="hidden" name="_error" value="error.html">
-        <input type="hidden" name="_subject" value="New Contact Form Submission from Chandpur Chess Club">
-        
-        <!-- Contact form fields -->
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        
-        <!-- Submit button -->
-        <button type="submit">Send Message</button>
-    </form>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container contact-container">
+            <h2>Contact Us</h2>
+            <form action="https://formsubmit.co/email@chandpurchessclub.site" method="POST">
+                <!-- Hidden inputs to handle redirections -->
+                <input type="hidden" name="_next" value="thank_you.html">
+                <input type="hidden" name="_error" value="error.html">
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+                
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     
 
     <!-- JavaScript for AJAX Form Submission -->
