@@ -129,6 +129,13 @@ nav {
     background-color: rgba(44, 62, 80, 0.7);
 }
 
+/* Hero Section */
+.hero-content h2 {
+    color: #fff;  /* Light color for hero section */
+    font-size: 3rem; /* Adjust the size if needed */
+}
+
+
 .hero-content {
     position: relative;
     color: #fff;
@@ -528,6 +535,95 @@ footer {
 
 .btn:hover {
     background-color: #34495e; /* Slightly lighter blue for hover effect */
+}
+
+/* Wrapper to ensure the page takes full height */
+.wrapper {
+    min-height: 100vh;  /* Make the page take at least the full height of the browser window */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Merch Section Styling */
+.merch-section {
+    background-color: #f9f9f9;  /* Light background to match the site */
+    color: #333;
+    padding: 100px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    flex-grow: 1;  /* Ensure this section expands to fill available space */
+}
+
+.merch-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Libre Baskerville', serif;
+    color: #222;
+}
+
+.coming-soon-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coming-soon-text {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.loader {
+    width: 80px;
+    height: 80px;
+    border: 8px solid rgba(34, 34, 34, 0.3);  /* Match site color */
+    border-top: 8px solid #333;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+}
+
+/* Footer Styling */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-container .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-container .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Keyframes for rotating loader */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Global styles consistency */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #333;
 }
 
 /* Footer alignment fix */
