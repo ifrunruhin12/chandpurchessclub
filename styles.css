@@ -273,13 +273,17 @@ nav {
 
 .social-carousel {
     display: flex;
-    overflow-x: auto;
+    justify-content: center; /* Centers the social posts horizontally */
+    align-items: center; /* Centers the social posts vertically within their container */
     gap: 20px;
     padding-bottom: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
+/* Adjusting the social-post for better responsiveness */
 .social-post {
     flex: 0 0 340px;
+    max-width: 100%; /* Ensures it doesn't exceed the container's width on small screens */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -300,6 +304,7 @@ nav {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
 
 /* =======================
    CONTACT SECTION STYLES
